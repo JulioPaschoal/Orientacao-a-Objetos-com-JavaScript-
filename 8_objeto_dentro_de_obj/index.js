@@ -10,11 +10,19 @@ let pessoa = {
     dizerIdade() {
         console.log("A minha idade é " + this.idade + " anos");
     },
-    podeDirigir: function(){
-        if(this.idade >= 18){
+    podeDirigir: function () {
+        if (this.idade >= 18) {
             console.log("Pode dirigir");
-        }else{
+        } else {
             console.log("Ainda não pode dirigir");
         }
+    },
+    caracteristicas: {
+        cnh: true,
+        carteira: ['dinheiro', 'documentos', 'moeda']
+
     }
 }
+
+
+console.log(pessoa.caracteristicas);
